@@ -5,13 +5,12 @@
 // Create an array containing the names of all items in the inventory maximum of 10.
 arrGroceries = ["apples","oranges","carrots","tomatoes","potatoes","onions","garlic",
 "ginger","bananas"];
+
+
+// Create a separate array with the corresponding stock quantities of each item maximum of 10.
 arrGroceriesList = [50,50,60,50,30,80,70,90,100]
 allGrocery=Object.fromEntries(arrGroceries.map((a,b)=>[a,arrGroceriesList[b]]))
  console.log(allGrocery);
-
-// Create a separate array with the corresponding stock quantities of each item maximum of 10.
-// arrGroceriesList = [50,50,60,50,30,80,70,90,100]
-// console.log(arrGroceriesList);
 
 // Write a function to add a new item to the inventory, updating both arrays.
  function inventoryList(allGrocery) {
@@ -19,18 +18,11 @@ allGrocery=Object.fromEntries(arrGroceries.map((a,b)=>[a,arrGroceriesList[b]]))
      console.log(allGrocery)
  }
  inventoryList(allGrocery)
-    // arrGroceriesList.push(40)
-//     console.log(arrGroceriesList)
-    
-// }
 
-// inventoryList(arrGroceries,arrGroceriesList)
 
 // Write a function to update the stock quantity of an existing item.
  function updateQty(allGrocery){
-    // let itemIndex = allItems.indexOf(item);
-    // quantity.splice(itemIndex, 0, newValue)
-    // allGrocery.push(tomatoes[45])
+  
  allGrocery.tomatoes=90
  return allGrocery
  }
@@ -62,7 +54,4 @@ allGrocery=Object.fromEntries(arrGroceries.map((a,b)=>[a,arrGroceriesList[b]]))
 
     
 
-//     }
-
-//     }
 
